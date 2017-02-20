@@ -10,29 +10,22 @@ namespace FibMVC.Controllers
     public class HomeController : Controller
     {
         // GET: Home
-        public ViewResult Test(int n)
+        public ViewResult Test()
         {
-            int a = 0;
-            int b = 1;
-
-            for (int i = 0; i < n; i++)
-            {
-                int temp = a;
-                a = b;
-                b = temp + b;
-            }
-            
-            return View(a);
+                        
+            return View();
         }
         [HttpGet]
-        public ViewResult AddMaxNumber()
+        public ActionResult AddMaxNumber()
         {
             return View();
         }
         [HttpPost]
-        public ViewResult AddMaxNumber(int maxNum)
+        public ActionResult AddMaxNumber(int maxNum)
         {
+            
             return View();
         }
+        
     }
 }
