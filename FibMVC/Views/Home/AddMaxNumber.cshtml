@@ -1,0 +1,25 @@
+﻿@model FibMVC.Models.AddMaxnumber
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>AddMaxNumber</title>    
+</head>
+<body>
+    <div> 
+        <div class="form-group">
+            <label>Max Number:</label>
+            @Html.TextBoxFor(x => x.maxNum)
+        </div>
+        <div class="text-center">
+            <input class="btn btn-success" type="submit" value="Enter" />
+        </div>
+    </div>
+</body>
+</html>
